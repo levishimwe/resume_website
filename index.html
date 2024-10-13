@@ -37,6 +37,14 @@
             #about h1 {
                 font-size: 16px;
             }
+            .name{
+                text-decoration: none;
+                color: aqua;
+            }
+            .name2{
+                text-decoration: none;
+                color: aqua;
+            }
 
         
 
@@ -51,7 +59,6 @@
 
         h2 {
             font-size: 2em;
-            border-bottom: 2px solid #333;
             padding-bottom: 10px;
         }
 
@@ -66,6 +73,22 @@
             justify-content: space-around;
             background-color: #f4f4f4;
             padding: 10px;
+        }
+        .content{
+            text-decoration: none;
+            color: white;
+            max-width: 80%;
+            margin: 0 auto;
+        }
+        .content2{
+            text-decoration: none;
+            color: white;
+            max-width: 60%;
+            margin: 0 auto;
+        }
+        .content3{
+            text-decoration: none;
+            text-align: center;
         }
 
         #main-nav li {
@@ -106,11 +129,12 @@
         .job, .education-item {
             margin-bottom: 20px;
         }
-
         .company, .institution, .date {
             font-style: italic;
-            color: #666;
+            color: white;
         }
+
+        
 
         /* Projects */
         .project {
@@ -118,6 +142,7 @@
             padding: 20px;
             border-radius: 5px;
             margin-bottom: 20px;
+            margin: 0 auto;
         }
 
         .project-link {
@@ -134,6 +159,7 @@
         #contact-form {
             display: flex;
             flex-direction: column;
+            color: white;
         }
 
         #contact-form label {
@@ -172,9 +198,83 @@
             cursor: pointer;
             color: white;
         }
+        .bio{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+            
+        }
 
+        .goal{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        .knowledge{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        .know{
+            text-decoration: none;
+            margin: 0 auto;
+            color: aqua;
+        }
+        .JOB{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        .EX{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        .company{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+
+        }
+        .level{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        }
+        .level1{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+        .institution{
+            text-decoration: none;
+            text-align: center;
+        }
+        .relevant{
+            text-decoration: none;
+            text-align: center;
+            color: white;
+        }
+        .PROJ1{
+            text-decoration: none;
+            text-align: center;
+            color: aqua;
+        
+        }
+        .PROJ2{
+            text-decoration: none;
+            text-align: center;
+
+        }
+        .address{
+            text-decoration: none;
+            color: aqua;
+        }
         /* Media Queries for Responsiveness */
         @media screen and (max-width: 768px) {
+            .content{
+                max-width: 80%;
+            }
             .nav-toggle {
                 display: block;
             }
@@ -224,7 +324,7 @@
 <body>
     <header>
         <img src="./Images/Levy Web Developer.jpeg" alt="logo">
-        <h1> Levis Ishimwe</h1>
+        <h1 class="name"> Levis Ishimwe</h1>
         <nav id="main-nav">
             <ul>
                 <li><a href="#about">About</a></li>
@@ -240,23 +340,23 @@
 
     <main>
         <section id="about">
-            <h1>Levis Ishimwe</h1>
-            <p1>I am Levis Ishimwe Student at African Leadership University and I am the one who have strongest mission in the World.</p1>
-            <h2>My mission</h2>
-            <p2>My mission is to be the first professor in software engineering and a fantastic hacker in the world and develop my country in items of digital software technologies like C.C.N.A and C.C.N.P in the different agencies of the country, for example, military agency, medical agency, education board, trade association, and industries.
+            <h1 class="name2">Levis Ishimwe</h1>
+            <p class="bio">I am Levis Ishimwe Student at African Leadership University and I am the one who have strongest mission in the World.</p>
+            <h2 class="goal">My mission</h2>
+            <p class="content">My mission is to be the first professor in software engineering and a fantastic hacker in the world and develop my country in items of digital software technologies like C.C.N.A and C.C.N.P in the different agencies of the country, for example, military agency, medical agency, education board, trade association, and industries.
 
-            </p2>
+            </p>
 
         </section>
 
         <section id="skills">
-            <h2> My Skills</h2>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
+            <h2 class="knowledge"> My Skills</h2>
+            <ul class="know">
+                <li>HTML</li>
+                <li>CSS</li>
                 <li>JavaScript</li>
                 <li>Responsive Web Design</li>
-                <li>Git</li>
+                <li>Github</li>
                 <li>Network Configuration and installation</li>
                 <li>Python and linux</li>
                 <!-- Add more skills as needed -->
@@ -264,15 +364,16 @@
         </section>
 
         <section id="experience">
-            <h2>Work Experience</h2>
-            <article class="job">
-                <h3>Web Developer</h3>
-                <p class="company">District Bugesera.</p>
-                <p class="date">January 2023 - Present</p>
-                <ul>
-                    <li>Developed and maintained responsive websites for various clients</li>
-                    <li>Collaborated with design team to implement user-friendly interfaces</li>
-                    <li>Optimized website performance and loading times</li>
+            <h2 class="JOB">Work Experience</h2>
+            <article class="internership">
+                <p class="company">District Bugesera.
+                <span class="date">January 2023 - Present</span>
+            </p>
+            <h3 class="EX">The Job: Web Developer</h3>
+                <ul class="content2">
+                    <li>Develope and maintaine responsive websites for various clients</li>
+                    <li>Collaborate with design team to implement user-friendly interfaces</li>
+                    <li>Optimize website performance and loading times</li>
                     <li>configuring network and mantaining network errors and also devices like Suitches and routers</li>
                 </ul>
             </article>
@@ -280,28 +381,29 @@
         </section>
 
         <section id="education">
-            <h2>Education</h2>
+            <h2 class="level">Education</h2>
             <article class="education-item">
-                <h3>Current University Student in Software Engineering</h3>
-                <p class="institution">African Leadership University</p>
-                <p class="date">Undergraduate/Current Student: January 2024</p>
-                <p>Relevant coursework: Web Development, Data Structures, Algorithms</p>
+                <h3 class="level1">Current University Student in Software Engineering</h3>
+                <p class="institution">African Leadership University.
+                <span class="date2">Undergraduate/Current Student: January 2024</span>
+                </p>
+                <p class="relevant">Relevants coursework: Web Development, Data Structures, Algorithms</p>
             </article>
             <!-- Add more education articles as needed -->
         </section>
 
         <section id="projects">
-            <h2>Projects</h2>
+            <h2 class="PROJ1">Projects</h2>
             <article class="project">
-                <h3>Personal Blog Website and Another Application </h3>
-                <p>Designed and developed a responsive blog website using HTML, CSS, Python and JavaScript.</p>
+                <h3 class="PROJ2">Personal Blog Website and Another Application </h3>
+                <p class="content3">Designed and developed a responsive blog website using HTML, CSS, Python and JavaScript.</p>
                 <a href="https://github.com/levishimwe/grade-book-app_studentNames" target="main" class="project-link">View Project</a>
             </article>
             <!-- Add more project articles as needed -->
         </section>
 
         <section id="contact">
-            <h2>Contact</h2>
+            <h2 class="address">Contact</h2>
             <form id="contact-form">
                 <label for="name">Name:</label>
                 <input type="text" id="name" name="name" required>
@@ -320,9 +422,9 @@
     </main>
 
     <footer>
-        <P1>I have told you my mission then What is your mission?</P1>
-
-        <p2>&copy; 2024 Levis Ishimwe First Professor in Web Developement and Programing Languages in The World in . All rights reserved.</p2>
+        <P>I have told you my mission then What is your mission?</P>
+        
+        <p>&copy; 2024 Levis Ishimwe First Professor in Web Developement and Programing Languages in The World in . All rights reserved.</p>
     </footer>
 
     <script>
