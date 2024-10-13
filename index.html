@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Levis Ishimwe- Resume</title>
+    <style>
+        /* Reset and base styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #000;
+        }
+        header {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        img {
+                width: 100px;
+                height: 100px;
+                border-radius: 200%;
+                object-fit: cover;
+            }
+
+
+            #about h1 {
+                font-size: 16px;
+            }
+
+        
+
+        /* Typography */
+        h1, h2, h3 {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+        }
+
+        h2 {
+            font-size: 2em;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        h3 {
+            font-size: 1.5em;
+        }
+
+        /* Navigation */
+        #main-nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: space-around;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+
+        #main-nav li {
+            margin: 0 10px;
+        }
+
+        #main-nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        #main-nav a:hover {
+            color: #007bff;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 40px;
+        }
+
+        /* Skills */
+        #skills ul {
+            list-style-type: none;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        #skills li {
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            margin: 5px;
+            border-radius: 5px;
+        }
+
+        /* Experience and Education */
+        .job, .education-item {
+            margin-bottom: 20px;
+        }
+
+        .company, .institution, .date {
+            font-style: italic;
+            color: #666;
+        }
+
+        /* Projects */
+        .project {
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        .project-link {
+            display: inline-block;
+            background-color: #007bff;
+            color: white;
+            padding: 5px 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+        /* Contact Form */
+        #contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #contact-form label {
+            margin-top: 10px;
+        }
+
+        #contact-form input,
+        #contact-form textarea {
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        #contact-form button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Responsive Navbar */
+        .nav-toggle {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media screen and (max-width: 768px) {
+            .nav-toggle {
+                display: block;
+            }
+
+            #main-nav ul {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #main-nav ul.show {
+                display: flex;
+            }
+
+            #main-nav li {
+                margin: 5px 0;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+        }
+
+        @media screen and (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+
+            #skills ul {
+                flex-direction: column;
+            }
+
+            #skills li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="./Images/Levy Web Developer.jpeg" alt="logo">
+        <h1> Levis Ishimwe</h1>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle">☰</button>
+    </header>
+
+    <main>
+        <section id="about">
+            <h1>Levis Ishimwe</h1>
+            <p1>I am Levis Ishimwe Student at African Leadership University and I am the one who have strongest mission in the World.</p1>
+            <h2>My mission</h2>
+            <p2>My mission is to be the first professor in software engineering and a fantastic hacker in the world and develop my country in items of digital software technologies like C.C.N.A and C.C.N.P in the different agencies of the country, for example, military agency, medical agency, education board, trade association, and industries.
+
+            </p2>
+
+        </section>
+
+        <section id="skills">
+            <h2> My Skills</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+                <li>Responsive Web Design</li>
+                <li>Git</li>
+                <li>Network Configuration and installation</li>
+                <li>Python and linux</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+            <article class="job">
+                <h3>Web Developer</h3>
+                <p class="company">District Bugesera.</p>
+                <p class="date">January 2023 - Present</p>
+                <ul>
+                    <li>Developed and maintained responsive websites for various clients</li>
+                    <li>Collaborated with design team to implement user-friendly interfaces</li>
+                    <li>Optimized website performance and loading times</li>
+                    <li>configuring network and mantaining network errors and also devices like Suitches and routers</li>
+                </ul>
+            </article>
+            <!-- Add more job articles as needed -->
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <article class="education-item">
+                <h3>Current University Student in Software Engineering</h3>
+                <p class="institution">African Leadership University</p>
+                <p class="date">Undergraduate/Current Student: January 2024</p>
+                <p>Relevant coursework: Web Development, Data Structures, Algorithms</p>
+            </article>
+            <!-- Add more education articles as needed -->
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <article class="project">
+                <h3>Personal Blog Website and Another Application </h3>
+                <p>Designed and developed a responsive blog website using HTML, CSS, Python and JavaScript.</p>
+                <a href="https://github.com/levishimwe/grade-book-app_studentNames" target="main" class="project-link">View Project</a>
+            </article>
+            <!-- Add more project articles as needed -->
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <label for="mission">Mission:</label>
+                <textarea type="mission" name="mission" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <P1>I have told you my mission then What is your mission?</P1>
+
+        <p2>&copy; 2024 Levis Ishimwe First Professor in Web Developement and Programing Languages in The World in . All rights reserved.</p2>
+    </footer>
+
+    <script>
+        // Responsive Navbar
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('#main-nav ul');
+
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('show');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('#main-nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                navMenu.classList.remove('show');
+            });
+        });
+
+        // Form validation
+        const contactForm = document.getElementById('contact-form');
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name');
+            const email = document.getElementById('email');
+            const message = document.getElementById('message');
+            let isValid = true;
+
+            if (name.value.trim() === '') {
+                isValid = false;
+                showError(name, 'Name is required');
+            } else {
+                removeError(name);
+            }
+
+            if (email.value.trim() === '') {
+                isValid = false;
+                showError(email, 'Email is required');
+            } else if (!isValidEmail(email.value)) {
+                isValid = false;
+                showError(email, 'Please enter a valid email address');
+            } else {
+                removeError(email);
+            }
+
+            if (message.value.trim() === '') {
+                isValid = false;
+                showError(message, 'Message is required');
+            } else {
+                removeError(message);
+            }
+
+            if (isValid) {
+                alert('Form submitted successfully!');
+                contactForm.reset();
+            }
+        });
+
+        function showError(input, message) {
+            const errorDiv = input.nextElementSibling;
+            if (errorDiv && errorDiv.classList.contains('error-message')) {
+                errorDiv.textContent = message;
+            } else {
+                const div = document.createElement('div');
+                div.className = 'error-message';
+                div.style.color = 'red';
+                div.textContent = message;
+                input.parentNode.insertBefore(div, input.nextSibling);
+            }
+        }
+
+        function removeError(input) {
+            const errorDiv = input.nextElementSibling;
+            if (errorDiv && errorDiv.classList.contains('error-message')) {
+                errorDiv.remove();
+            }
+        }
+
+        function isValidEmail(email) {
+            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+            return re.test(String(email).toLowerCase());
+        }
+    </script>
+</body>
+</html>
