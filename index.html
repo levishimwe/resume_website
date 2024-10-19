@@ -322,6 +322,26 @@
             text-decoration: none;
             color: aqua;
         }
+        .option1{
+            text-decoration: none;
+            text-align: right ;
+            color: yellow;
+            font-size: larger;
+        }
+        .Stages{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        .option{
+            text-decoration: none;
+            color: yellow;
+            font-size: larger;
+        }
+        .High{
+            font-size: large;
+            color: white;
+        }
         /* Media Queries for Responsiveness */
         @media screen and (max-width: 768px) {
             .content{
@@ -395,7 +415,7 @@
     <main>
         <section id="about">
             <h1 class="name2">Levis Ishimwe</h1>
-            <p class="bio typing-effect">I am Levis Ishimwe Student at African Leadership University and I am the one who have strongest mission in the World and I am web developer with passion of becoming full stack developer.</p>
+            <p class="bio typing-effect">I am Levis Ishimwe Student at African Leadership University and I am the one who have strongest mission in the World and I am web developer with passion of becoming full stack developer,my email: i.levis@alustudent.com.</p>
 
               <!-- Random Quote -->
               <p class="full-quote">
@@ -445,11 +465,21 @@
         <section id="education">
             <h2 class="level">Education</h2>
             <article class="education-item">
-                <h3 class="level1">Current University Student in Software Engineering</h3>
-                <p class="institution">African Leadership University.
-                <span class="date2">Undergraduate/Current Student: January 2024</span>
-                </p>
-                <p class="relevant">Relevants coursework: Web Development, Data Structures, Algorithms</p>
+                <div class="Stages">
+                    <h1 class="option1">University</h1>
+                    <h4 class="option">High School</h4>
+                    
+                </div>
+                <div class="Stages">
+                    <div>
+                        <h3 class="level1">Current University Student in Software Engineering</h3>
+                        <p class="institution">African Leadership University.
+                        <span class="date2">Undergraduate/Current Student: January 2024</span>
+                        </p>
+                        <p class="relevant">Relevants coursework: Web Development, Data Structures, Algorithms</p>
+                    </div>
+                    <div class="High">Samuduha Integrated College</div>
+            </div>
             </article>
             <!-- Add more education articles as needed -->
         </section>
@@ -545,6 +575,11 @@
               typingElement.textContent += text.charAt(charIndex);
               charIndex++;
               setTimeout(typeWriter, 100);
+            } else {
+                // restart the typewriter
+                charIndex = 0;
+                typingElement.textContent = "";
+                typeWriter()
             }
         }
         typeWriter();
