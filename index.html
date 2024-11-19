@@ -4,394 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Levis Ishimwe- Resume</title>
-    <style>
-        /* Reset and base styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: #000;
-        }
-        header {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        img {
-                width: 100px;
-                height: 100px;
-                border-radius: 200%;
-                object-fit: cover;
-            }
-
-
-            #about h1 {
-                font-size: 16px;
-            }
-            .name{
-                text-decoration: none;
-                color: aqua;
-            }
-            .name2{
-                text-decoration: none;
-                color: aqua;
-            }
-
+    <link rel="stylesheet" href="style.css">
         
-
-        /* Typography */
-        h1, h2, h3 {
-            margin-bottom: 20px;
-        }
-
-        h1 {
-            font-size: 2.5em;
-        }
-
-        h2 {
-            font-size: 2em;
-            padding-bottom: 10px;
-        }
-
-        h3 {
-            font-size: 1.5em;
-        }
-
-        /* Navigation */
-        #main-nav ul {
-            list-style-type: none;
-            display: flex;
-            justify-content: space-around;
-            background-color: #f4f4f4;
-            padding: 10px;
-        }
-        .content{
-            text-decoration: none;
-            color: white;
-            
-        }
-        .content2{
-            text-decoration: none;
-            color: white;
-            
-            margin: 0 auto;
-        }
-        .content3{
-            text-decoration: none;
-            text-align: center;
-        }
-
-        #main-nav li {
-            margin: 0 10px;
-        }
-
-        #main-nav a {
-            text-decoration: none;
-            color: #333;
-            font-weight: bold;
-        }
-
-        #main-nav a:hover {
-            color: #007bff;
-        }
-
-        /* Sections */
-        section {
-            margin-bottom: 40px;
-        }
-
-        /* Skills */
-        #skills ul {
-            list-style-type: none;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        #skills li {
-            background-color: #007bff;
-            color: white;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        /* Experience and Education */
-        .job, .education-item {
-            margin-bottom: 20px;
-        }
-        .company, .institution, .date {
-            font-style: italic;
-            color: white;
-            margin-top: 0px;
-        }
-
-        
-
-        /* Projects */
-        .project {
-            background-color: #f4f4f4;
-            padding: 20px;
-            border-radius: 5px;
-            margin-bottom: 20px;
-            margin: 0 auto;
-        }
-
-        .project-link {
-            display: inline-block;
-            background-color: #007bff;
-            color: white;
-            padding: 5px 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-        }
-
-        /* Contact Form */
-        #contact-form {
-            display: flex;
-            flex-direction: column;
-            color: white;
-        }
-
-        #contact-form label {
-            margin-top: 10px;
-        }
-
-        #contact-form input,
-        #contact-form textarea {
-            padding: 5px;
-            margin-top: 5px;
-        }
-
-        #contact-form button {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 10px;
-            margin-top: 10px;
-            cursor: pointer;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            margin-top: 40px;
-            padding: 20px;
-            background-color: #f4f4f4;
-        }
-
-        /* Responsive Navbar */
-        .nav-toggle {
-            display: none;
-            background: none;
-            border: none;
-            font-size: 1.5em;
-            cursor: pointer;
-            color: white;
-        }
-        .bio{
-            text-decoration: none;
-            /* text-align: center; */
-            color: aqua;
-            
-        }
-
-        .goal{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .knowledge{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .know{
-            text-decoration: none;
-            margin: 0 auto;
-            color: aqua;
-        }
-        .JOB{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .EX{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .company{
-            text-decoration: none;
-            color: white;
-
-        }
-        .level{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .level1{
-            text-decoration: none;
-            
-            color: white;
-        }
-        .institution{
-            text-decoration: none;
-            
-        }
-        .relevant{
-            text-decoration: none;
-            
-            color: white;
-        }
-        .PROJ1{
-            text-decoration: none;
-            
-            color: aqua;
-        
-        }
-        .PROJ2{
-            text-decoration: none;
-            text-align: center;
-
-        }
-        .address{
-            text-decoration: none;
-            color: aqua;
-        }
-        .HOBB{
-            text-decoration: none;
-            
-            color: aqua;
-            margin-top: 2%;
-        }
-        .hobcont{
-            display: inline-block;
-            background-color: white;
-            color: black;
-            padding: 5px 10px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 10px;
-            max-width: 80%;
-            margin: auto;
-        }
-        .goodhob {
-            display: flex;
-            flex-direction: row;
-            
-        }
-        .goodhob li{
-            background-color: #007bff;
-            color: white;
-            padding: 5px 10px;
-            margin: 5px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-            list-style-type: none;
-            display: flex;
-            flex-wrap: wrap;
-            margin-top: 2%;
-            
-            
-
-        }
-        .hobb2{
-            text-decoration: none;
-            
-            color: aqua;
-        }
-        .full-quote {
-            font-size: 20px;
-            color: yellow;
-            margin-bottom: 50px;
-            margin-top: 2%;
-          }
-        .clock{
-            text-decoration: none;
-            color: aqua;
-        }
-        .option1{
-            text-decoration: none;
-            text-align: right ;
-            color: yellow;
-            font-size: larger;
-        }
-        .Stages{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-        }
-        .option{
-            text-decoration: none;
-            color: yellow;
-            font-size: larger;
-        }
-        .High{
-            font-size: large;
-            color: white;
-        }
-        /* Media Queries for Responsiveness */
-        @media screen and (max-width: 768px) {
-            .content{
-                max-width: 80%;
-            }
-            .nav-toggle {
-                display: block;
-            }
-
-            #main-nav ul {
-                display: none;
-                flex-direction: column;
-                align-items: center;
-            }
-
-            #main-nav ul.show {
-                display: flex;
-            }
-
-            #main-nav li {
-                margin: 5px 0;
-            }
-
-            h1 {
-                font-size: 2em;
-            }
-
-            h2 {
-                font-size: 1.5em;
-            }
-
-            h3 {
-                font-size: 1.2em;
-            }
-        }
-
-        @media screen and (max-width: 480px) {
-            body {
-                padding: 10px;
-            }
-
-            #skills ul {
-                flex-direction: column;
-            }
-
-            #skills li {
-                margin: 5px 0;
-            }
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -425,24 +39,67 @@
               <!-- Real-Time Clock -->
               <div class="clock" id="clock"></div>
             <h2 class="goal">My mission</h2>
-            <p class="content">My mission is to be the first professor in software engineering and a fantastic hacker in the world and develop my country in items of digital software technologies like C.C.N.A and C.C.N.P in the different agencies of the country, for example, military agency, medical agency, education board, trade association, and industries.
+            <p class="conta">My mission is to be the first professor in software engineering and a fantastic hacker in the world and develop my country in items of digital software technologies like C.C.N.A and C.C.N.P in the different agencies of the country, for example, military agency, medical agency, education board, trade association, and industries.
 
             </p>
 
         </section>
 
-        <section id="skills">
+        <!-- <section id="skills">
             <h2 class="knowledge"> My Skills</h2>
             <ul class="know">
-                <li><a href="https://www.w3schools.com/html" target="_self">HTML</a></li>
-                <li><a href="https://www.w3schools.com/html" target="_self">CSS</a></li>
-                <li><a href="https://hyperskill.org/" target="_self">JavaScript</a></li>
+                <li><a href="https://www.w3schools.com/html" target="_self">HTML and CSS</a></li>
+                <li><a href="https://hyperskill.org/" target="_self">JavaScript and Python</a></li>
                 <li><a href="https://www.w3schools.com/html" target="_self">Responsive Web Design</a></li>
-                <li><a href="https://github.com/levishimwe" target="_self">Github</a></li>
+                <li><a href="https://github.com/levishimwe" target="_self">Github and linux</a></li>
                 <li><a href="https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html" target="_self">Network Configuration and installation</a></li>
-                <li><a href="https://hyperskill.org/" target="_self">Python and linux</a></li>
-                <!-- Add more skills as needed -->
             </ul>
+        </section> -->
+
+        <section id="skills">
+            <h2 class="knowledge">My Skills</h2>
+            <div class="tabs">
+                <div class="tab" data-target="html-css">
+                    HTML and CSS
+                </div>
+                <div class="tab" data-target="javascript-python">
+                    JavaScript and Python
+                </div>
+                <div class="tab" data-target="responsive-web">
+                    Responsive Web Design
+                </div>
+                <div class="tab" data-target="github-linux">
+                    Github and Linux
+                </div>
+                <div class="tab" data-target="networking">
+                    Network Configuration and Installation
+                </div>
+            </div>
+            <div class="content" id="html-css">
+                Learn the basics of <b>HTML and CSS</b> for creating web pages.
+                HTML is the standard markup language used to structure content on the web. It provides the basic framework of a webpage by defining elements like headings, paragraphs, images, links, tables, and more.While CSS is a stylesheet language used to style and format the appearance of HTML elements. It controls colors, fonts, layouts, and other design aspects of a webpage.
+                <a href="https://www.w3schools.com/html" target="_blank">More info</a>.
+            </div>
+            <div class="content" id="javascript-python">
+                Enhance your programming skills with <b>JavaScript and Python</b>.
+                JavaScript is a high-level, interpreted programming language primarily used to make web pages interactive. It is often used alongside HTML and CSS to create dynamic and responsive user interfaces.While Python is a high-level, versatile programming language known for its simplicity and readability. It is used for a wide range of applications, including web development, data analysis, artificial intelligence, and automation.
+                <a href="https://hyperskill.org/" target="_blank">More info</a>.
+            </div>
+            <div class="content" id="responsive-web">
+                Master <b>Responsive Web Design</b> to create flexible and mobile-friendly layouts.
+                Responsive Web Design is a web development approach that ensures a website's layout and content adjust seamlessly to different screen sizes and devices, such as desktops, tablets, and smartphones. This approach improves user experience by providing optimal readability, navigation, and usability across various devices.
+                <a href="https://www.w3schools.com/html" target="_blank">More info</a>.
+            </div>
+            <div class="content" id="github-linux">
+                Explore version control with <b>GitHub</b> and systems with <b>Linux</b>.
+                GitHub is a web-based platform that provides hosting for version control and collaboration. It is built on Git, a distributed version control system, and is widely used by developers to manage and share code.While Linux is an open-source, Unix-like operating system kernel. It powers a variety of operating systems (called "distributions") used in servers, desktops, and embedded systems. Examples include Ubuntu, Fedora, and Debian
+                <a href="https://github.com/levishimwe" target="_blank">More info</a>.
+            </div>
+            <div class="content" id="networking">
+                Learn <b>Network Configuration and Installation</b> techniques.
+                Network configuration and installation involve setting up, managing, and maintaining the hardware and software required to create and sustain a computer network. This process ensures that devices (computers, servers, routers, switches, etc.) within the network can communicate effectively and securely.
+                <a href="https://www.cisco.com/c/en/us/td/docs/routers/access/800M/software/800MSCG/routconf.html" target="_blank">More info</a>.
+            </div>
         </section>
 
         <section id="experience">
@@ -478,7 +135,12 @@
                         </p>
                         <p class="relevant">Relevants coursework: Web Development, Data Structures, Algorithms</p>
                     </div>
-                    <div class="High">Samuduha Integrated College</div>
+                    <div class="High">
+                        School:Samuduha Integrated College.
+                        <p class="sector">Sector:ICT</p>
+                    </div>
+                    
+                    
             </div>
             </article>
             <!-- Add more education articles as needed -->
@@ -540,6 +202,22 @@
 
     <script>
 
+        // Select all tabs and content elements
+        const tabs = document.querySelectorAll('.tab');
+        const contents = document.querySelectorAll('.content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                // Remove active class from all tabs and content
+                tabs.forEach(t => t.classList.remove('active'));
+                contents.forEach(c => c.classList.remove('active'));
+
+                // Add active class to clicked tab and corresponding content
+                tab.classList.add('active');
+                const target = document.getElementById(tab.dataset.target);
+                if (target) target.classList.add('active');
+            });
+        });
 
         // Random Quote
         const quotes = [
